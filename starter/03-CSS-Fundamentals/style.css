@@ -92,3 +92,35 @@ li:first-child {
 li:last-child {
   font-style: italic;
 }
+
+/*li:nth-child(odd) {*/
+/*  color: red;*/
+/*}*/
+
+/*first p of the article, misconception: this won't work*/
+article p:first-child {
+  color: red;
+}
+
+/*styling links: only for those which have href property*/
+a:link {
+  color: #94d82d;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #5f3dc4;
+}
+
+a:hover {
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline dotted;
+}
+
+a:active {
+  color: #45260a;
+  font-style: italic;
+}
+
+/*LVHA*/
