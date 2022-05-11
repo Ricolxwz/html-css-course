@@ -1,6 +1,7 @@
 /*combine selectors1: list selectors: same feature*/
 h1, h2, h3, h4, li, p {
   font-family: "MesloLGS NF";
+  color: #444;
 }
 
 /*combine selectors2: descendant selectors*/
@@ -13,8 +14,13 @@ h1, h2, h3, h4, li, p {
 /*  font-style: italic;*/
 /*}*/
 
+h1, h2, h3 {
+  color: #5f3dc4;
+}
+
 h1 {
-  color: blue;
+  /*In practice, we mostly use hexadecimal colors, and rgba when we need transparency*/
+  color: rgba(28, 120, 120, 0.7);
   font-size: 26px;
   text-transform: capitalize;
   font-style: italic;
@@ -43,7 +49,7 @@ p {
   line-height: 1.5;
 }
 
-/*id: use id name only once*/
+/*id selector: use id name only once*/
 #author {
   font-style: italic;
   font-size: 10px;
@@ -52,8 +58,9 @@ p {
 #copyright {
   font-size: 10px;
 }
+/*In the real world, we never use id, because it's preparing for the future, so use class!*/
 
-/*class: use id multiple times*/
+/*class: selector use id multiple times*/
 .related-author {
   font-size: 18px;
   font-weight: bold;
@@ -63,3 +70,25 @@ p {
   list-style: none;
 }
 
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background: #f7f7f7;
+  border-bottom: 5px solid #087f5b;
+  border-top: 5px solid #087f5b;
+}
+
+/*.first-li {*/
+/*  font-weight: bold;*/
+/*}*/
+
+/*pseudo class*/
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
