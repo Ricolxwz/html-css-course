@@ -1,31 +1,65 @@
+/*combine selectors1: list selectors: same feature*/
+h1, h2, h3, h4, li, p {
+  font-family: "MesloLGS NF";
+}
+
+/*combine selectors2: descendant selectors*/
+/*footer p {*/
+/*  font-size: 10px;*/
+/*}*/
+
+/*combine selectors2: descendant selectors*/
+/*article header p {*/
+/*  font-style: italic;*/
+/*}*/
+
 h1 {
   color: blue;
   font-size: 26px;
-  font-family: "MesloLGS NF";
   text-transform: capitalize;
   font-style: italic;
 }
 
 h2 {
   font-size: 40px;
-  font-family: "MesloLGS NF";
 }
 
 h3 {
   font-size: 30px;
-  font-family: "MesloLGS NF";
 }
 
 h4 {
   font-size: 20px;
-  font-family: "MesloLGS NF";
   text-transform: uppercase;
   text-align: center;
 }
 
+li {
+  font-size: 20px;
+}
+
 p {
   font-size: 15px;
-  font-family: "MesloLGS NF";
   line-height: 1.5;
+}
+
+/*id: use id name only once*/
+#author {
+  font-style: italic;
+  font-size: 10px;
+}
+
+#copyright {
+  font-size: 10px;
+}
+
+/*class: use id multiple times*/
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related-list {
+  list-style: none;
 }
 
