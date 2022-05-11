@@ -1,0 +1,31 @@
+h1 {
+  color: blue;
+  font-size: 26px;
+  font-family: "MesloLGS NF";
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "MesloLGS NF";
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "MesloLGS NF";
+}
+
+h4 {
+  font-size: 20px;
+  font-family: "MesloLGS NF";
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  font-family: "MesloLGS NF";
+  line-height: 1.5;
+}
+
